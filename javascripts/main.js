@@ -1,4 +1,5 @@
 var postSet = {};
+var postSetByTitle = {};
 var postList = [];
 
 function ajax(method, url, callback, error) {
@@ -38,6 +39,7 @@ function lostPostList(callback) {
         for (var iter in postList) {
             var post = postList[iter];
             postSet[post.p] = post;
+            postSetByTitle[post.title] = post;
         }
 
         callback();
@@ -48,7 +50,8 @@ function showPostList(htmlId) {
     var indexMarkdown = "# [qyvlik 的博客](/)\n\n";
     for (var iter in postList) {
         var post = postList[iter];
-        var postListItem = `- [${post.title}](/?p=${post.p})\n`;
+        var postUrl = encodeURI("/?p=" + post.p + "&title=" + post.title);
+        var postListItem = "- [" + post.title + "](" + postUrl + ")\n";
         indexMarkdown += postListItem;
     }
     document.getElementById(htmlId).innerHTML = md2html(indexMarkdown);
@@ -60,7 +63,7 @@ function loadPost(htmlId, file) {
     });
 }
 
-function lostPostByP(htmlId, p) {
+function loadPostByP(htmlId, p) {
     var post = postSet[p];
 
     if (typeof post === 'undefined') {
@@ -68,6 +71,18 @@ function lostPostByP(htmlId, p) {
         return;
     }
 
+    var url = post.file;
+    loadPost(htmlId, url);
+}
+
+function loadPostByTitle(htmlId, title) {
+    console.log("title:", title, ",decodeURI(title):", decodeURI(title)
+    );
+    var post = postSetByTitle[decodeURI(title)];
+    if (typeof post === 'undefined') {
+        document.getElementById(htmlId).innerHTML = md2html("# not found\n [go back home](/)");
+        return;
+    }
     var url = post.file;
     loadPost(htmlId, url);
 }

@@ -1,8 +1,8 @@
-var http = require('http');
-var url = require('url');
-var fs = require('fs');
-var path = require('path');
-var mine = {
+let http = require('http');
+let url = require('url');
+let fs = require('fs');
+let path = require('path');
+let mine = {
     "css": "text/css",
     "gif": "image/gif",
     "html": "text/html",
@@ -24,15 +24,29 @@ var mine = {
     "xml": "text/xml"
 };
 
+let fileCache = {};
+
 let server = http.createServer(function (request, response) {
     let pathname = url.parse(request.url).pathname;
 
     let realPath = "." + decodeURIComponent(pathname);
-    console.log(`realPath:${realPath}`);
 
     if (realPath === "./") {
         realPath = "./index.html"
     }
+
+    let contentFromCache = fileCache[realPath];
+    if (typeof contentFromCache !== 'undefined') {
+        console.log("match cache : ", realPath);
+        response.writeHead(200, {
+            'Content-Type': contentFromCache.contentType
+        });
+        response.write(contentFromCache.fileContent, "binary");
+        response.end();
+        return;
+    }
+
+    console.log(`read realPath:${realPath}`);
 
     let ext = path.extname(realPath);
     ext = ext ? ext.slice(1) : 'unknown';
@@ -45,7 +59,7 @@ let server = http.createServer(function (request, response) {
             response.write("This request URL " + realPath + " was not found on this server.");
             response.end();
         } else {
-            fs.readFile(realPath, "binary", function (err, file) {
+            fs.readFile(realPath, "binary", function (err, fileContent) {
                 if (err) {
                     response.writeHead(500, {
                         'Content-Type': 'text/plain;charset=utf-8'
@@ -56,7 +70,16 @@ let server = http.createServer(function (request, response) {
                     response.writeHead(200, {
                         'Content-Type': contentType
                     });
-                    response.write(file, "binary");
+
+                    let fileContentCache = {
+                        "contentType": contentType,
+                        "file": realPath,
+                        "fileContent": fileContent
+                    };
+
+                    fileCache[realPath] = fileContentCache;
+
+                    response.write(fileContent, "binary");
                     response.end();
                 }
             });
@@ -67,3 +90,5 @@ let port = 8082;
 server.listen(port);
 
 console.log(`server listen localhost:${port}`);
+
+require("./updatePostList.js");
