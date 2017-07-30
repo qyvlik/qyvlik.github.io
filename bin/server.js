@@ -90,5 +90,3 @@ let port = 8082;
 server.listen(port);
 
 console.log(`server listen localhost:${port}`);
-
-require("./updatePostList.js");

@@ -1,5 +1,9 @@
 #! /bin/sh
 
+git pull
+
+sleep 5
+
 npm install
 
 sleep 5
