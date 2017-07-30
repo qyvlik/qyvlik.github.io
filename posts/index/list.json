@@ -294,6 +294,13 @@
 		"tags": []
 	},
 	{
+		"title": "如何获取指定objectName的QObject",
+		"file": "/posts/data/qml/collect/如何获取指定objectName的QObject.md",
+		"dir": "/posts/data/qml/collect",
+		"p": "b5e74689",
+		"tags": []
+	},
+	{
 		"title": "有关QJSEngine与QQmlEngine",
 		"file": "/posts/data/qml/collect/有关QJSEngine与QQmlEngine.md",
 		"dir": "/posts/data/qml/collect",
