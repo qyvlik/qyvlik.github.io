@@ -1,3 +1,3 @@
 #! /bin/sh
-
-forever restart bin/server.js
+forever stop bin/server.js
+forever start bin/server.js

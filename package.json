@@ -5,5 +5,7 @@
   "scripts": {
     "start": "node ./bin/server"
   },
-  "dependencies": {}
+  "dependencies": {
+    "replaceall": "^0.1.6"
+  }
 }
