@@ -1,5 +1,7 @@
 # QtQuick 技巧6
 
+> 作者 [qyvlik](http://blog.qyvlik.space)
+
 ##  开启图像调试模式
 
 参见 [`Qt Quick Scene Graph Renderer`](http://doc.qt.io/qt-5/qtquick-visualcanvas-scenegraph-renderer.html)

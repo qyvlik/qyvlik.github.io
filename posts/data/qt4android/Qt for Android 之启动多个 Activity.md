@@ -1,5 +1,7 @@
 # 启动多个 Activity
 
+> 作者 [qyvlik](http://blog.qyvlik.space)
+
 ```
 QAndroidJniObject param1 = QAndroidJniObject::fromString(packageName);
 QAndroidJniObject param2 = QAndroidJniObject::fromString(localClassName);

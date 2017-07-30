@@ -1,7 +1,8 @@
 # QML 中神秘的 Component
 
->  Component 类型的属性。
-会把所有 qmltype 转换为 Component 的闭包。既然是闭包，外部必然无法访问，但是内部可以访问外部变量。
+> 作者 [qyvlik](http://blog.qyvlik.space)
+
+Component 类型的属性，会把所有 qmltype 转换为 Component 的闭包。既然是闭包，外部必然无法访问，但是内部可以访问外部变量。
 
 在 ListView 中有个代理模式，其中最为重要的是名为 `delegate` 的属性。
 

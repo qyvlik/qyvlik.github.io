@@ -1,5 +1,7 @@
 # QtQuick 技巧
 
+> 作者 [qyvlik](http://blog.qyvlik.space)
+
 ## dpi
 
 ```

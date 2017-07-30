@@ -1,5 +1,7 @@
 # qmldir 模块中的 JavaScript 文件
 
+> 作者 [qyvlik](http://blog.qyvlik.space)
+
 设有如下目录
 
 ```

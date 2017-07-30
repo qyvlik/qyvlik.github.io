@@ -1,5 +1,7 @@
 # QML 与 C++ 交互之工厂方法
 
+> 作者 [qyvlik](http://blog.qyvlik.space)
+
 先看如下的类声明，声明了一个产品类和工厂类。
 
 ```

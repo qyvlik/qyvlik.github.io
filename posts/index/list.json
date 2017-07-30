@@ -49,20 +49,6 @@
 		"tags": []
 	},
 	{
-		"title": "OpenGL. 入门教程",
-		"file": "/posts/data/opengl/OpenGL. 入门教程.md",
-		"dir": "/posts/data/opengl",
-		"p": "d1b3231c",
-		"tags": []
-	},
-	{
-		"title": "Qt5 编译 assimp",
-		"file": "/posts/data/opengl/Qt5 编译 assimp.md",
-		"dir": "/posts/data/opengl",
-		"p": "7af90ba3",
-		"tags": []
-	},
-	{
 		"title": "Qt5 编译 glfw3",
 		"file": "/posts/data/opengl/Qt5 编译 glfw3.md",
 		"dir": "/posts/data/opengl",
@@ -91,20 +77,6 @@
 		"tags": []
 	},
 	{
-		"title": "QtQuick之Canvas图像圆角遮罩",
-		"file": "/posts/data/qml/canvas/QtQuick之Canvas图像圆角遮罩.md",
-		"dir": "/posts/data/qml/canvas",
-		"p": "7431c44e",
-		"tags": []
-	},
-	{
-		"title": "鼻涕控件",
-		"file": "/posts/data/qml/canvas/鼻涕控件.md",
-		"dir": "/posts/data/qml/canvas",
-		"p": "7ff0c853",
-		"tags": []
-	},
-	{
 		"title": "c++操作qml的数据库",
 		"file": "/posts/data/qml/collect/c++操作qml的数据库.md",
 		"dir": "/posts/data/qml/collect",
@@ -116,13 +88,6 @@
 		"file": "/posts/data/qml/collect/QML Text 同时显示不同大小的字.md",
 		"dir": "/posts/data/qml/collect",
 		"p": "d3469801",
-		"tags": []
-	},
-	{
-		"title": "QML UI布局",
-		"file": "/posts/data/qml/collect/QML UI布局.md",
-		"dir": "/posts/data/qml/collect",
-		"p": "d02f48c2",
 		"tags": []
 	},
 	{
@@ -217,20 +182,6 @@
 		"tags": []
 	},
 	{
-		"title": "qml 性能优化指南",
-		"file": "/posts/data/qml/collect/qml 性能优化指南.md",
-		"dir": "/posts/data/qml/collect",
-		"p": "833472ad",
-		"tags": []
-	},
-	{
-		"title": "qml 文件间参数传递",
-		"file": "/posts/data/qml/collect/qml 文件间参数传递.md",
-		"dir": "/posts/data/qml/collect",
-		"p": "3a529018",
-		"tags": []
-	},
-	{
 		"title": "QML 环境下的 JavaScript的import指令",
 		"file": "/posts/data/qml/collect/QML 环境下的 JavaScript的import指令.md",
 		"dir": "/posts/data/qml/collect",
@@ -263,13 +214,6 @@
 		"file": "/posts/data/qml/collect/qmldir 模块中的 JavaScript 文件.md",
 		"dir": "/posts/data/qml/collect",
 		"p": "0cfcba93",
-		"tags": []
-	},
-	{
-		"title": "Qt 5.7.0 使用笔记",
-		"file": "/posts/data/qml/collect/Qt 5.7.0 使用笔记.md",
-		"dir": "/posts/data/qml/collect",
-		"p": "3ed69fe5",
 		"tags": []
 	},
 	{
@@ -459,13 +403,6 @@
 		"file": "/posts/data/qt-docs_zh_HANS/QtCamera/qdoc-zh_CN/CameraRecorder.md",
 		"dir": "/posts/data/qt-docs_zh_HANS/QtCamera/qdoc-zh_CN",
 		"p": "e6dff1e9",
-		"tags": []
-	},
-	{
-		"title": "readme",
-		"file": "/posts/data/qt-docs_zh_HANS/QtCamera/qdoc-zh_CN/readme.md",
-		"dir": "/posts/data/qt-docs_zh_HANS/QtCamera/qdoc-zh_CN",
-		"p": "3aa068af",
 		"tags": []
 	},
 	{

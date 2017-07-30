@@ -1,5 +1,7 @@
 # Q_GADGET 宏
 
+> 作者 [qyvlik](http://blog.qyvlik.space)
+
 > The Q_GADGET macro is a lighter version of the Q_OBJECT macro for classes that do not inherit from QObject but still want to use some of the reflection capabilities offered by QMetaObject. Just like the Q_OBJECT macro, it must appear in the private section of a class definition.
 
 > Q_GADGETs can have Q_ENUM, Q_PROPERTY and Q_INVOKABLE, but they cannot have signals or slots

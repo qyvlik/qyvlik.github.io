@@ -1,5 +1,7 @@
 # QML 中 JavaScript Object 的一些隐含方法
 
+> 作者 [qyvlik](http://blog.qyvlik.space)
+
 其实不能说是隐含，是比较少用到。
 
 ## 为对象设置 `get/set` 

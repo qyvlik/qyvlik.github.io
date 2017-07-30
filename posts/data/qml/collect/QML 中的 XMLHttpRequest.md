@@ -1,5 +1,7 @@
 # QML 中的 XMLHttpRequest 对象
 
+> 作者 [qyvlik](http://blog.qyvlik.space)
+
 QML 中的 `XMLHttpRequest` 没有**同源限制**，并且可以**读写**本地文件。
 
 代码如下：

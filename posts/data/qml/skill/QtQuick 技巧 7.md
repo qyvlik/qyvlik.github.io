@@ -1,5 +1,7 @@
 # QtQuick 技巧 7
 
+> 作者 [qyvlik](http://blog.qyvlik.space)
+
 ## 关闭qmlc
 
 > Qt 5.8

@@ -1,5 +1,7 @@
 # V-Play SwipeOptionsContainer
 
+> 翻译 [qyvlik](http://blog.qyvlik.space)
+
 效果就是类似 QQ 那个，某个列表项目的侧滑效果。
 
 ```

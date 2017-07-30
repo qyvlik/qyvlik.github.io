@@ -1,5 +1,7 @@
 # QML Text 同时显示不同大小的字
 
+> 作者 [qyvlik](http://blog.qyvlik.space)
+
 直接上代码。
 
 ```

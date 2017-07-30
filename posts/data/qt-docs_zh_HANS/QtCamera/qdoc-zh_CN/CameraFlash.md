@@ -1,6 +1,6 @@
 # QtMultiMedia 之 CameraFlash
 
-> 翻译：qyvlik
+> 翻译 [qyvlik](http://blog.qyvlik.space)
 
 > 5.5.1
 

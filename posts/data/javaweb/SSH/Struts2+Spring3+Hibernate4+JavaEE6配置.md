@@ -1,5 +1,7 @@
 # Struts2+Spring3+Hibernate4+JavaEE6 配置
 
+> 作者 [qyvlik](http://blog.qyvlik.space)
+
 > Struts2, Spring3, Hibernate4, JavaEE6, JDK 7, Tomcat8, MyEclipse 2014, MySQL 5, DBCP
 
 本文参照自 [使用Maven搭建Struts2+Spring3+Hibernate4的整合开发环境](http://www.cnblogs.com/xdp-gacl/p/4239501.html)。不过有些许不同。

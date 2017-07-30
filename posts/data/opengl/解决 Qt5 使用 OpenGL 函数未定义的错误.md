@@ -1,8 +1,8 @@
 # 解决 Qt5 使用 OpenGL 函数未定义的错误
 
-> windows7
+> 作者 [qyvlik](http://blog.qyvlik.space)
 
-> Qt 5.5.1
+> windows7, Qt 5.5.1
 
 ## 函数未定义
 

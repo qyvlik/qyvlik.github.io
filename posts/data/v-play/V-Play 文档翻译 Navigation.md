@@ -1,6 +1,6 @@
 # V-Play 文档翻译 Navigation
 
-> 翻译：qyvlik
+> 翻译 [qyvlik](http://blog.qyvlik.space)
 
 平台对应的导航控制器。
 

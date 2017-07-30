@@ -1,6 +1,6 @@
 # AbstractAxis QML 类型翻译
 
-> 翻译：qyvlik
+> 翻译 [qyvlik](http://blog.qyvlik.space)
 
 > 这里去除了重复的文档。
 

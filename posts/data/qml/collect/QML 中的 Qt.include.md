@@ -1,5 +1,7 @@
 # QML 中的 Qt.include
 
+> 作者 [qyvlik](http://blog.qyvlik.space)
+
 这个函数是在一个 `JavaScript` 文件中直接包含其他 `JavaScript` 文件的函数。
 
 ```

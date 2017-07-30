@@ -1,5 +1,7 @@
 # QML 数据库小探
 
+> 作者 [qyvlik](http://blog.qyvlik.space)
+
 首先 QML 中的数据库文件是存放在某个路径中的，具体就是通过 `QmlEngine::offlineStoragePath` 属性得知。接着，在这个路径下，可能有多个数据库文件。
 
 在 QML 中 `QtQuick.LocalStorage` 中的 `openDatabaseSync` 方法如下：

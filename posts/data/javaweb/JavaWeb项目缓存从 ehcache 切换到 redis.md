@@ -1,5 +1,7 @@
 # JavaWeb项目缓存从 ehcache 切换到 redis
 
+> 作者 [qyvlik](http://blog.qyvlik.space)
+
 由于项目一直用 `ehcache` 作为缓存，不过相对于 `redis`，`ehcache` 的缓存实现依赖于 `jvm`，若想与其他语言的项目交互，恐怕会吃不少苦头。
 
 ## pom.xml 依赖

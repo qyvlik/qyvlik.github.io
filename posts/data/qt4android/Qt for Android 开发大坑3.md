@@ -1,5 +1,7 @@
 # Qt for Android 开发大坑3
 
+> 作者 [qyvlik](http://blog.qyvlik.space)
+
 ## 退至后台切回僵死
 
 qt for android，app被按home推到后台，过一段时间再resume，有几率变成 freezing 状态，屏幕黑掉，失去响应。

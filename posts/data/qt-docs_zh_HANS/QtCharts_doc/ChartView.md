@@ -1,8 +1,8 @@
 # ChartView QML 类型翻译 
 
-> PS 貌似 Qt 的图表接口参照 c# 的~
+> 翻译 [qyvlik](http://blog.qyvlik.space)
 
-> 翻译: qyvlik
+> PS 貌似 Qt 的图表接口参照 c# 的~
 
 ## 属性
 

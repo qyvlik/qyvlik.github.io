@@ -1,6 +1,6 @@
 # Qt for Android 开发大坑
 
-> 作者: qyvlik
+> 作者 [qyvlik](http://blog.qyvlik.space)
 
 > Qt 5.5.1
 

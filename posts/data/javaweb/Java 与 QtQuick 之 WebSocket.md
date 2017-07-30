@@ -1,5 +1,7 @@
 # Java 与 QtQuick 之 WebSocket
 
+> 作者 [qyvlik](http://blog.qyvlik.space)
+
 > **WebSocket** 是一种新的 HTML5 协议，它实现了浏览器与服务器全双工通信(full-duplex)。一开始的握手需要借助HTTP请求完成握手。
 
 直接上代码，Java 端：

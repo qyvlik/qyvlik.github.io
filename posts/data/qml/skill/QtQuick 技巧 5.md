@@ -1,5 +1,7 @@
 # QtQuick 技巧 5
 
+> 作者 [qyvlik](http://blog.qyvlik.space)
+
 ## 表单提交（不包括cookies）
 
 ```

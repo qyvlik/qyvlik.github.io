@@ -1,10 +1,8 @@
 # Qt5 编译 glfw3
 
-> windows7
+> 作者 [qyvlik](http://blog.qyvlik.space)
 
-> Qt 5.5.1
-
-> [glfw 3.1.2](https://github.com/glfw/glfw)
+> windows7, Qt 5.5.1, [glfw 3.1.2](https://github.com/glfw/glfw)
 
 由于 glfw 是直接使用 `cmake` 构建的。所以我们直接使用 `QtCreator` 打开 `glfw` 目录下的 `CMakeLists.txt`。然后进行配置。
 

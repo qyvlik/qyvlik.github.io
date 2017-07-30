@@ -1,6 +1,8 @@
 # Qt 5 编译 glm
 
-> 不要把 `inl` 文件当做源文件。
+> 作者 [qyvlik](http://blog.qyvlik.space)
+
+> **不要把 `inl` 文件当做源文件。**
 
 在 pro 中指定 `CONFIG += c++11` 编译 `glm` 时，报如下错误：
 

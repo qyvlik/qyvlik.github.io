@@ -1,5 +1,7 @@
 # V-Play SimpleRow
 
+> 翻译 [qyvlik](http://blog.qyvlik.space)
+
 `AppListView` 的默认代理。
 
 ```

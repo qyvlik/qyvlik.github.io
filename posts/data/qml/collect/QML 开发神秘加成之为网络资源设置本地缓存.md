@@ -1,5 +1,7 @@
 # QML 开发神秘加成之为网络资源设置本地缓存
 
+> 作者 [qyvlik](http://blog.qyvlik.space)
+
 直接上码：
 
 ```cpp

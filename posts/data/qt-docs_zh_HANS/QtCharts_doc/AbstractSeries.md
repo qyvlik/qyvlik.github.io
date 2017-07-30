@@ -1,6 +1,6 @@
 # AbstractSeries QML 类型翻译
 
-> 翻译：qyvlik
+> 翻译 [qyvlik](http://blog.qyvlik.space)
 
 > 移除重复文档。
 

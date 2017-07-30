@@ -1,6 +1,6 @@
 # 如何获取指定objectName的QObject
 
-> 作者 qyvlik
+> 作者 [qyvlik](http://blog.qyvlik.space)
 
 如下`QML`代码，设置了一个 `objectName` 为 `YOUR_OBJECT_NAME` 的 `QML` 对象，现在需要在 `c++` 代码中获取到他。
 

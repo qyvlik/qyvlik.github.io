@@ -1,5 +1,7 @@
 # QML 的 property 支持的类型
 
+> 作者 [qyvlik](http://blog.qyvlik.space)
+
 本文的 qml 运行环境为 qt4，在 qt5 中同样支持。
 
 在 Qt SDK 提供的文档中提及 property 支持类型。

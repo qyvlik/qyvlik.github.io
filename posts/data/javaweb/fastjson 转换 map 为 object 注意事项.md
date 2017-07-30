@@ -1,5 +1,7 @@
 # fastjson 转换 map 为 object 注意事项
 
+> 作者 [qyvlik](http://blog.qyvlik.space)
+
 将 Http 的 `ParameterMap` 转换为对应 `JSON` 对象时，要注意 **由于表单提交的键，会有多个对应值，取第一个即可**
 
 ```

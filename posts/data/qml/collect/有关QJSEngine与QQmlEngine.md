@@ -1,5 +1,7 @@
 # 有关 QJSEngine 与 QQmlEngine
 
+> 作者 [qyvlik](http://blog.qyvlik.space)
+
 `QQmlEngine` 是继承自 `QJSEngine`，本身做了一些修改，例如添加 `console`，`Qt`，`XMLHttpRequest` 等全局对象，但是不允许添加新的全局对象。
 
 而 `QJSEngine` 就可以操作全局对象。例如通过添加一些新的全局变量，来构建一个新的 `JSEngine`。

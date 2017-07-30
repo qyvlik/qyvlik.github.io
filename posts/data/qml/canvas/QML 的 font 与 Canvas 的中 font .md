@@ -1,5 +1,7 @@
 # QML 的 font 与 Canvas 的中 font 
 
+> 作者 [qyvlik](http://blog.qyvlik.space)
+
 QML 中的 Canvas 的 font 类型和 HTML CSS font 的类型一样，但是和 QML 本身的 font 不一样，所以需要做一个转换函数。
 
 ## QML 中的 font 有如下属性：

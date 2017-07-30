@@ -1,5 +1,7 @@
 ## Qt on Android 的 SSL 支持
 
+> 作者 [qyvlik](http://blog.qyvlik.space)
+
 由于 `Android 7.0` 修改了一些依赖库的连接信息，且 Qt 本身不提供一些依赖库，例如 ssl 的依赖库。所以需要自行编译 ssl 给 Qt on Android 使用。
 
 参考如下官方文档进行编译：[Adding OpenSSL Support for Android](http://doc.qt.io/qt-5/opensslsupport.html)

@@ -1,5 +1,7 @@
 # QML 轴线
 
+> 翻译 [qyvlik](http://blog.qyvlik.space)
+
 > Axes：轴线，series：连续的，串联的，scatter：离散的
 
 ```qml

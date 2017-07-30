@@ -1,6 +1,6 @@
 # Legend QML 类型翻译
 
-> 翻译：qyvlik
+> 翻译 [qyvlik](http://blog.qyvlik.space)
 
 `Legend` 在图表视图中是图例说明的意思。
 

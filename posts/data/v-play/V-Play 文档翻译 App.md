@@ -1,6 +1,6 @@
 # V-Play 文档翻译 App
 
-> 翻译：qyvlik
+> 翻译 [qyvlik](http://blog.qyvlik.space)
 
 V-Play 应用的最顶层控件，用以管理其他控件。
 

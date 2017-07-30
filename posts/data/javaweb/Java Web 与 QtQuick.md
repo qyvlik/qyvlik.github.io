@@ -1,5 +1,7 @@
 # Java Web 与 QtQuick
 
+> 作者 [qyvlik](http://blog.qyvlik.space)
+
 ## Java Web 中获取 QtQuick 的表单数据
 
 Java Web 中，在 `post` 方法下，如果  `request.getParameter` 获取为 null，QtQuick 要注意**设置客户端请求头** `setRequestHeader("Content-Type", "application/x-www-form-urlencoded");`。

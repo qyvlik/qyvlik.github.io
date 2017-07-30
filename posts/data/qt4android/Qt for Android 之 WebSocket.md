@@ -1,10 +1,8 @@
 # Qt for Android 之 WebSocket
 
-> Qt 5.5.1，Qt 5.8
+> 作者 [qyvlik](http://blog.qyvlik.space)
 
-> Android 5.1，Android 7.0
-
-> m2 note, OnePlus3T
+> Qt 5.5.1，Qt 5.8, Android 5.1，Android 7.0, m2 note, OnePlus3T
 
 在安卓应用中使用 `WebSocket` 时提示 `Qt.WebScoket` 模块不存在，到 Qt 的安装目录下找到 `Qt5.5.1\5.5\android_armv7\qml\Qt\WebSockets` 发现里面只有一个 `qmldir` 文件，虽然这个文件内部标明了 `declarative_qmlwebsockets` 的路径。但是在发布到安卓上时提示模块不存在。
 

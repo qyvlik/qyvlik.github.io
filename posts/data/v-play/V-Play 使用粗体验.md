@@ -1,5 +1,7 @@
 # V-Play 使用粗体验
 
+> 作者 [qyvlik](http://blog.qyvlik.space)
+
 ## 在 window 7 上
 
 其实 Window 7 是作为生产和开发的环境。

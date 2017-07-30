@@ -1,6 +1,6 @@
 # V-Play 文档翻译 Theme
 
-> 翻译：qyvlik
+> 翻译 [qyvlik](http://blog.qyvlik.space)
 
 定义应用主题样式的全局对象。
 

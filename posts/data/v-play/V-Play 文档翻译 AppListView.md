@@ -1,6 +1,6 @@
 # V-Play 文档翻译 AppListView
 
-> 翻译：qyvlik
+> 翻译 [qyvlik](http://blog.qyvlik.space)
 
 提供原生的滚动指示器，一个空的视图和横向滑动手势（类似 QQ 界面的对某个对话项右滑而出现的菜单）。
 

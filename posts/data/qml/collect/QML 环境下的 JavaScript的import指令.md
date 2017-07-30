@@ -1,5 +1,7 @@
 # QML 环境下的 JavaScript的import指令
 
+> 作者 [qyvlik](http://blog.qyvlik.space)
+
 回顾之前的 [QML 中的 Qt.include](QML 中的 Qt.include.md)。在一个 `JavaScript` 文件中引用其他 `JavaScript` 文件的方式。
 
 这提供另一种方式导入 `JavaScript` 库的方式。

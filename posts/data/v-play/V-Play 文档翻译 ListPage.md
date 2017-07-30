@@ -1,6 +1,6 @@
 # V-Play 文档翻译 ListPage
 
-> 翻译：qyvlik
+> 翻译 [qyvlik](http://blog.qyvlik.space)
 
 应用的一个页面。
 

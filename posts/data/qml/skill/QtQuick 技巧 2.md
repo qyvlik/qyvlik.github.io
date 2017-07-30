@@ -1,5 +1,7 @@
 # QtQuick 技巧 2
 
+> 作者 [qyvlik](http://blog.qyvlik.space)
+
 ## QtQuick 与 Java Web 通信问题
 
 Java Web 中，在 `post` 方法下，如果  `request.getParameter` 获取为 null，注意**设置客户端请求头** `setRequestHeader("Content-Type", "application/x-www-form-urlencoded");`。

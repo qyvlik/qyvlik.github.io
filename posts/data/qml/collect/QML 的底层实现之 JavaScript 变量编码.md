@@ -1,5 +1,7 @@
 # QML 的底层实现之 JavaScript 变量编码
 
+> 作者 [qyvlik](http://blog.qyvlik.space)
+
 QML 是基于 *ECMA-262*（JavaScript），通过 Qt 的机制进行拓展的高级编程语言。下面会简单讲讲 JavaScript 变量是如何在 C++ 中定义的。
 
 先看如下一段话：

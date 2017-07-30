@@ -1,5 +1,7 @@
 # Qt 调用 Java 方法笔记
 
+> 作者 [qyvlik](http://blog.qyvlik.space)
+
 如果遇到类似的错误：
 
 `error: undefined reference to '_jstring* QAndroidJniObject::callStaticMethod<_jstring*>(char const*, char const*)'`

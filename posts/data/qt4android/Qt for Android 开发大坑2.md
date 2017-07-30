@@ -1,5 +1,7 @@
 # Qt for Android 开发大坑 2
 
+> 作者 [qyvlik](http://blog.qyvlik.space)
+
 ## 华为
 
 1. 使用自家的 `CPU` 的手机，在调试时无法将控制台输出输出到 **QtCreator**。

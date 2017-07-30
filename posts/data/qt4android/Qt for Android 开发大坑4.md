@@ -1,5 +1,7 @@
 # Qt for Android 开发大坑4
 
+> 作者 [qyvlik](http://blog.qyvlik.space)
+
 > Qt 版本为 5.5.1 以及 5.8.0，安卓版本为 7.0
 
 ## ssl 支持

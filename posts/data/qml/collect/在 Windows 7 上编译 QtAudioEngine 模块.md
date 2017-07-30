@@ -1,16 +1,12 @@
 # 在 Windows 7 上编译 QtAudioEngine 模块
 
+> 作者 [qyvlik](http://blog.qyvlik.space)
+
 Compile QtAudioEngine on windows.
 
 QtAudioEngine 是一个使用 OpenAL 技术的三维音效模块。OpenAL 多用于游戏场景中的音效，主要模拟场景的立体性。
 
-> 系统：Window 7 32 bits
-
-> Qt 版本：Qt 5.6 rc
-
-> OpenAL 版本：1.1
-
-> 编译 QtAudioEngine  版本为 1.0
+> 系统：Window 7 32 bits, Qt 5.6 rc, OpenAL 版本：1.1, 编译 QtAudioEngine  版本为 1.0
 
 分为如下步骤：
 
@@ -22,7 +18,7 @@ QtAudioEngine 是一个使用 OpenAL 技术的三维音效模块。OpenAL 多用
 
 4. 准备编译
 
-     a. 打开 Qt 安装路径，找到路径`你的Qt安装路径\5.6\Src\qtmultimedia\src\imports\audioengine`，我的是 `C:\Qt\Qt5.6.0\5.6\Src\qtmultimedia\src\imports\audioengine`。
+    a. 打开 Qt 安装路径，找到路径`你的Qt安装路径\5.6\Src\qtmultimedia\src\imports\audioengine`，我的是 `C:\Qt\Qt5.6.0\5.6\Src\qtmultimedia\src\imports\audioengine`。
 
     b. 找到 `audioengine.pro` 使用 `QtCreator` 打开，没错我们不直接用 `qmake`，直接使用 `QtCreator` 来编译。
 
@@ -53,7 +49,7 @@ INCLUDEPATH += $$PWD/'../../../../../../../../Program Files (x86)/OpenAL 1.1 SDK
     
     既去掉 `AL` 文件夹。
 
-    e. 编译前，将项目的设定为构建，去掉影子构建（Shadow build）的选项。
+    e. 编译前，将项目的设定为构建，去掉**影子构建**（Shadow build）的选项。
     
 5. 开始编译模块
 

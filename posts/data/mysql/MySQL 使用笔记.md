@@ -1,5 +1,7 @@
 # MySQL 使用笔记
 
+> 作者 [qyvlik](http://blog.qyvlik.space)
+
 > 垃圾 MySQL，毁我青春。
 
 在 Window7 下我重新安装了 MySQL 5.7，尝试连接数据库时报如下错误：

@@ -1,6 +1,6 @@
 # ListPage
 
-> 翻译: qyvlik
+> 翻译 [qyvlik](http://blog.qyvlik.space)
 
 > VPlayApps 1.0
 

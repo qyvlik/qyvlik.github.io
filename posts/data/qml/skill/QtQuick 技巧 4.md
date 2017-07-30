@@ -1,5 +1,7 @@
 ﻿# QtQuick 技巧 4
 
+> 作者 [qyvlik](http://blog.qyvlik.space)
+
 > 基于 QtQuick.Controls 1.x
 
 ## QML 窗体透明

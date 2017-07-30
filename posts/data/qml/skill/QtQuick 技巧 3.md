@@ -1,5 +1,7 @@
 # QtQuick 技巧 3
 
+> 作者 [qyvlik](http://blog.qyvlik.space)
+
 ## 使用默认属性自定义控件
 
 1. 自定义的qml控件，实例化后，就可以包含其他 qml 类。

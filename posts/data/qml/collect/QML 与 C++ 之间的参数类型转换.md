@@ -1,5 +1,7 @@
 # QML 与 C++ 之间的参数类型转换
 
+> 作者 [qyvlik](http://blog.qyvlik.space)
+
 严格来说 QML 是 JavaScript 的一个拓展，应该属于弱类型语言，但是 QML 其实是强类型的语言，辅以 JavaScript 的弱类型（挺像泛型的），这样即确保运行速度，又能确保灵活性。
 
 ## QML 与 C++ 类型映射
