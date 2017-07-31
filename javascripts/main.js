@@ -78,6 +78,7 @@ function showPostList(htmlId) {
 function loadPost(htmlId, file, post) {
     ajax("GET", file, function (xhr) {
         document.getElementById(htmlId).innerHTML = md2html(xhr.responseText);
+        document.title = post.title;
 
         var imgList = document.getElementsByTagName("img");
 
