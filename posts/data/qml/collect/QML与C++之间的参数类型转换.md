@@ -1,4 +1,4 @@
-# QML 与 C++ 之间的参数类型转换
+# QML与C++之间的参数类型转换
 
 > 作者 [qyvlik](http://blog.qyvlik.space)
 
@@ -34,10 +34,10 @@
 
 另外可以将 qml 对象的 id 传入，C++参数是 `QObject*`。
 
----
-
 如果要将一个数组从 `C++` 传给 `QML`，最好使用 `QJsonArray`，或者 `QList<QString>`，`QList<QVariant>`，`QList<QJSValue>`。 
 
+> **注意**：不同 `QJSEngine` 之间的 `QJSValue` 不同互相使用。
+
 ---
 
-注意，不同 `QJSEngine` 之间的 `QJSValue` 不同互相使用。
+视频：[C++ 与 QML 的交♂互♀](https://www.bilibili.com/video/av4085094/)

@@ -1,4 +1,4 @@
-# QML 与 C++ 交互之工厂方法
+# QML与C++交互之工厂方法
 
 > 作者 [qyvlik](http://blog.qyvlik.space)
 
@@ -87,4 +87,4 @@ qml 使用如下，可以进行代码补全。
             console.log(p2.age);
 ```
 
-![](images/QML 与 C++ 交互之工厂方法-001.png)
+![](images/QML与Cpp交互之工厂方法-001.png)

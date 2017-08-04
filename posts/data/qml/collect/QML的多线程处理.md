@@ -1,4 +1,4 @@
-# QML 的多线程处理
+# QML的多线程处理
 
 > 作者 [qyvlik](http://blog.qyvlik.space)
 

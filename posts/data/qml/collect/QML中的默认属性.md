@@ -1,12 +1,12 @@
-# QML 中的默认属性
+# QML中的默认属性
 
 > 作者 [qyvlik](http://blog.qyvlik.space)
 
-在讲默认属性前，先说一说  QML 对象本身具备什么东西。例如**属性**，**方法**，**信号**。
+在讲默认属性前，先说一说 `QML` 对象本身具备什么东西。例如**属性**，**方法**，**信号**。
 
-但是如果 QML 对象本身包含了另一个 QML 对象实体，这个对象实体该怎么归纳？
+如果 `QML` 对象本身包含了另一个 `QML` 对象实体，这个对象实体该怎么归纳？
 
-## QML 中的 `data` 链表属性
+## QML中的链表类型默认属性
 
 ```
 Item {
@@ -21,9 +21,9 @@ Item {
 }
 ```
 
-上诉代码中，一个 `Item` 包含了另外一个 `Item`。这两个 `Item` 就形成了父子关系。其实就是将 `child` 归属到了 `root` 的 `data` 这个链表属性中。
+上诉代码中，一个 `Item` 包含了另外一个 `Item`。这两个 `Item` 就形成了父子关系。其实就是将 `child` 归属到了 `root` 的 `data` 这个默认属性中。
 
-也就是说，QML 对象中，所有的 QML 实体对象都会默认归属到一个链表属性中，并且建立起父子关系（`QtObject` 除外，`Item` 及其 C++ 派生类有效，在 QML 中重新设定默认属性的无效）。
+也就是说，`QML` 对象中，所有的 `QML` 实例都会默认归属到一个链表属性中，并且建立起父子关系（`QtObject` 除外，`Item` 及其 C++ 派生类有效）。
 
 ## QML 中 qmltype 类型的默认属性
 
@@ -58,6 +58,7 @@ MyItem {
     id: root
     myChild: Item {
         id: child
+        parent: root
     }
 }
 ```
@@ -92,11 +93,11 @@ MyItem {
 
 因为 `QtObject` 不能转换为 `Item`。
 
-## QML 中自定义默认映射链表属性映射到 native 默认链表属性
+## QML 中自定义链表类型默认属性映射到 native 链表类型默认属性
 
-> **native 默认链表属性**，是指在 c++ 代码中，定义 qmltype 的类中，使用类似 ` Q_CLASSINFO("DefaultProperty", "data")` 声明的某个链表属性。例如 `Item::data`，在 c++ 代码中，**会对加入 `data` 的 `QObject*` 进行父子关系构建**。`Item::data` 的类型在 c++ 是 `QQmlListProperty<QObject>`，在 qml 中的类型是 `list<QtObject>`。
+> **native 默认链表属性**，是指在 c++ 代码中，定义 qmltype 的类中，使用类似 `Q_CLASSINFO("DefaultProperty", "data")` 声明的某个链表属性。例如 `Item::data`，在 c++ 代码中，**会对加入 `data` 的 `QObject*` 进行父子关系构建**。`Item::data` 的类型在 c++ 是 `QQmlListProperty<QObject>`，在 qml 中的类型是 `list<QtObject>`。
 
-> **自定义默认映射链表属性**是指在 qml 文档中定义的默认属性以引用的方式映射到 **native 默认链表属性**。
+> **自定义链表类型默认属性**是指在 `QML` 文档中定义的**默认属性**以引用的方式映射到 **native 默认链表属性**。
 
 先看如下代码：
 
@@ -157,9 +158,9 @@ Page {
 
 使用时，就可以看到效果，`Button` 是位于 `Page` 的内容区域中，而不会在 `Page` 的头部或者尾部，意味着可以将**控件内部的子控件限定在指定的布局中**。
 
-## QML 中自定义默认链表属性
+## QML 中自定义链表类型默认属性
 
-> **自定义默认链表属性**是指形如 `default property list<T> defaultProperies` 的属性。
+> **自定义链表类型默认属性**是指形如 `default property list<T> defaultProperies` 的属性。
 
 先看如下代码：
 

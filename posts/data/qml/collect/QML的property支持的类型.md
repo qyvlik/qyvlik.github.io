@@ -1,12 +1,12 @@
-# QML 的 property 支持的类型
+# QML的property支持的类型
 
 > 作者 [qyvlik](http://blog.qyvlik.space)
 
-本文的 qml 运行环境为 qt4，在 qt5 中同样支持。
+本文的 `QML` 运行环境为 qt4，在 qt5 中同样支持。
 
 在 Qt SDK 提供的文档中提及 property 支持类型。
 
-qml 中的 property 的作用是动态为对象添加属性，并且添加的属性可以进行跟踪（值被修改了就会发出信号）
+`QML` 中的 `property` 的作用为对象声明属性，并且添加的属性可以进行跟踪（值被修改了就会发出信号）
 
 添加的属性，官方文档只提及了添加基础类型属性的说明。诸如:`int`, `double`,  `bool`, `string`, `variant`, `color`, `real`, `vector3d`, `url`, `time`, `rect`, `size`, `enumeration`,  `font`, `date`, `point`, `list`, `action` 等基础到不能再基础的数据类型。
 
@@ -16,7 +16,7 @@ qml 中的 property 的作用是动态为对象添加属性，并且添加的属
 
 这个 `QtObject` 元素是直接继承自 `c++` 类: `QObject`，相对于 `Item` 占用的内存就小点。一般用来封装一些特定的功能函数。
 
-但这个 `QtObject` 元素不能直接内嵌qml的其他元素，甚至连自己都不能内嵌。
+但这个 `QtObject` 元素不能直接内嵌 `QML` 的其他元素，甚至连自己都不能内嵌。
 
 比如下面的代码会报错:
 
@@ -37,7 +37,7 @@ Cannot assign to non-existent default property
          ^ 
 ```
 
-如果我想要在 `QtObject` 嵌套一个可用的 `qml` 元素，可以像下面这种写法
+如果我想要在 `QtObject` 嵌套一个可用的 `QML` 元素，可以像下面这种写法
 
 ```
 import QtQuick 1.1
@@ -77,6 +77,8 @@ QtObject{
 }
 ```
 
+> **注意**：Qt 5 不推荐在 `QML` 中使用 `variant`，而是使用 `var` 进行代替。
+
 输出结果是:
 
 ```
@@ -90,7 +92,8 @@ __object:10000
 QDeclarativeView only supports loading of root objects that derive from QGraphicsObject 
 ```
 
-`<QDeclarativeView only supports loading of root objects that derive from QGraphicsObject >` 这句就忽略不看
+`<QDeclarativeView only supports loading of root objects that derive from QGraphicsObject >` 这句就忽略不看。
+
 如果想要在 `QtObject` 中内嵌一个或者多个 qml 元素作为属性，有如下三种写法：
 
 第一种比较常用：
@@ -103,8 +106,6 @@ property variant object： QtObject {
 ```
 
 直接使用 `variant` 对应的是 js 中 `var`，很好用的一个东西。
-
-> 注意，请在 Qt5 中使用 `var` 替代 `variant`
 
 第二使用一个list存储一个或多个qml元素实例：
 
@@ -134,10 +135,7 @@ property variant object： QtObject {
 
 第三种声明的属性其属性名指向的是一个实例化对象，并非是一个基本数据类型的值。所以对这样的属性进行赋值操作后，再打印其属性值是 `undefined`。
 
-
-还有一个，以上三种声明的属性的写法和qml的标准属性名是不一样的，qml 的标准属性名写法是开头必须是小写字母开头。而以下划线开头的写法是告诉大家，这个属性是 **const private**，不要随意变动他。
-
-~~在新的Qt5（QtQuick2）中还有更多的特性，比如支持了在qml中定义枚举。~~
+还有一个，以上三种声明的属性的写法和 `QML` 的标准属性名是不一样的，`QML` 的标准属性名写法是开头必须是小写字母开头。而以下划线开头的写法是告诉大家，这个属性是 **private**，不要随意变动他。
 
 还有上诉的写法Qt 文档没有给出太多实例，只是在文档中说了一些(Qt4)
 
@@ -163,7 +161,7 @@ Enumerations declared with Q_ENUMS()
 To allow a custom C++ type to be created or used in QML, the C++ class must be registered as a QML type using qmlRegisterType(), as shown in the Defining new QML elements section above.
 ```
 
-最后这句话就说明了，只要通过 qml 的 注册函数 `qmlRegisterType()` 就能像第三种声明属性的方法那样将一个对象实例声明为属性。
+最后这句话就说明了，只要通过 `QML` 的 注册函数 `qmlRegisterType()` 就能像第三种声明属性的方法那样将一个对象实例声明为属性。
 
 ## 神秘加成的默认属性
 

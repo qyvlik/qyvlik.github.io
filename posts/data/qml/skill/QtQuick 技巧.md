@@ -234,7 +234,6 @@ Rectangle {
 ## 很好的 QML 动画加载示例
 
 ```
-
 Rectangle {
     id:contair
     width: rad * 2

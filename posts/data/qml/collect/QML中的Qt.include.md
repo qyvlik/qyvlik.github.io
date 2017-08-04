@@ -1,4 +1,4 @@
-# QML 中的 Qt.include
+# QML中的Qt.include
 
 > 作者 [qyvlik](http://blog.qyvlik.space)
 

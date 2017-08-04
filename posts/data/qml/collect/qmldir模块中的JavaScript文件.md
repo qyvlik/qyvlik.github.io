@@ -1,4 +1,4 @@
-# qmldir 模块中的 JavaScript 文件
+# qmldir模块中的JavaScript文件
 
 > 作者 [qyvlik](http://blog.qyvlik.space)
 

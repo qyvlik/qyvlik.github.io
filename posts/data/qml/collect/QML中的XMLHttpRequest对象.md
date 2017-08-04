@@ -1,4 +1,4 @@
-# QML 中的 XMLHttpRequest 对象
+# QML中的XMLHttpRequest对象
 
 > 作者 [qyvlik](http://blog.qyvlik.space)
 
@@ -7,7 +7,7 @@ QML 中的 `XMLHttpRequest` 没有**同源限制**，并且可以**读写**本�
 代码如下：
 
 ```
-function saveText(filename, contentText) {
+function writeTextFileAsync(filename, contentText) {
     var xhr = new XMLHttpRequest;
     xhr.onreadystatechange = function() {
         if (xhr.readyState == XMLHttpRequest.HEADERS_RECEIVED) {
@@ -17,13 +17,9 @@ function saveText(filename, contentText) {
         }
     };
     xhr.open("PUT", filename);
-    xhr.send(contentText.toString());
-    xhr.open("PUT", filename);
-    xhr.send(contentText.toString());
+    xhr.send(contentText);
 }
 ```
-
-> note: 注意，需要两次执行两次 `open` 和 `send`，HTTP 方法为 `PUT`。
 
 但是 `QML` 中只实现了 **XMLHttpRequest Level 1** 标准。
 
@@ -82,74 +78,8 @@ ReturnedValue QQmlXMLHttpRequestCtor::method_setRequestHeader(CallContext *ctx)
 
 如有需求，可参照 `XMLHttpRequest` 接口可以设计一个支持更多必要功能的 `C++` 类。
 
+已完成 [qyvlik/HttpRequest](https://github.com/qyvlik/HttpRequest)
+
+---
+
 [W3C XMLHttpRequest 标准](http://www.w3.org/TR/XMLHttpRequest/)。
-
-`XMLHttpRequest` 的 W3C 接口描述如下：
-
-```
-[NoInterfaceObject]
-interface XMLHttpRequestEventTarget : EventTarget {
-    // event handlers
-    attribute EventHandler onloadstart;
-    attribute EventHandler onprogress;
-    attribute EventHandler onabort;
-    attribute EventHandler onerror;
-    attribute EventHandler onload;
-    attribute EventHandler ontimeout;
-    attribute EventHandler onloadend;
-};
-
-interface XMLHttpRequestUpload : XMLHttpRequestEventTarget {
-
-};
-
-enum XMLHttpRequestResponseType {
-    "",
-    "arraybuffer",
-    "blob",
-    "document",
-    "json",
-    "text"
-};
-
-[Constructor]
-interface XMLHttpRequest : XMLHttpRequestEventTarget {
-    // event handler
-    attribute EventHandler onreadystatechange;
-
-    // states
-    const unsigned short UNSENT = 0;
-    const unsigned short OPENED = 1;
-    const unsigned short HEADERS_RECEIVED = 2;
-    const unsigned short LOADING = 3;
-    const unsigned short DONE = 4;
-    readonly attribute unsigned short readyState;
-
-    // request
-    void open(ByteString method, [EnsureUTF16] DOMString url);
-    void open(ByteString method, 
-             [EnsureUTF16] DOMString url, 
-             boolean async, 
-             optional [EnsureUTF16] DOMString? username = null, 
-             optional [EnsureUTF16] DOMString? password = null);
-    void setRequestHeader(ByteString header, ByteString value);
-    attribute unsigned long timeout;
-    attribute boolean withCredentials;
-    readonly attribute XMLHttpRequestUpload upload;
-    void send(optional (ArrayBufferView or Blob or Document or [EnsureUTF16] DOMString or FormData)? data = null);
-    void abort();
-
-    // response
-    readonly attribute unsigned short status;
-    readonly attribute ByteString statusText;
-    ByteString? getResponseHeader(ByteString header);
-    ByteString getAllResponseHeaders();
-    void overrideMimeType(DOMString mime);
-    attribute XMLHttpRequestResponseType responseType;
-    readonly attribute any response;
-    readonly attribute DOMString responseText;
-    readonly attribute Document? responseXML;
-};
-```
-
-已完成 [qyvlik/HttpRequest](https://github.com/qyvlik/HttpRequest)。

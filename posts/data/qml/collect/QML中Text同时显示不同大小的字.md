@@ -1,4 +1,4 @@
-# QML Text 同时显示不同大小的字
+# QML中Text同时显示不同大小的字
 
 > 作者 [qyvlik](http://blog.qyvlik.space)
 

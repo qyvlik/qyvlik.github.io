@@ -1,4 +1,4 @@
-# QML 中链表属性的元素增减
+# QML中链表类型属性的元素增减
 
 > 作者 [qyvlik](http://blog.qyvlik.space)
 

@@ -1,4 +1,4 @@
-# QML 中的 ListView 中的隐藏秘技
+# QML中的ListView中的隐藏秘技
 
 应该是 ListView 中 `delegate` 的秘技。
 

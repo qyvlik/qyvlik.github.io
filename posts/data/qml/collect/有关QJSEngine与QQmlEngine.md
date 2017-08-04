@@ -1,4 +1,4 @@
-# 有关 QJSEngine 与 QQmlEngine
+# 有关QJSEngine与QQmlEngine
 
 > 作者 [qyvlik](http://blog.qyvlik.space)
 
@@ -16,7 +16,11 @@
         it.next();
         qDebug() << it.name() << ": " << it.value().toString();
     }
+```
 
+输出如下：
+
+```
 "Object" :  "function() { [code] }"
 "String" :  "function() { [code] }"
 "Number" :  "function() { [code] }"
@@ -67,7 +71,7 @@
 globalObject().setProperty(name, value);
 ```
 
-使用 `newQObject` 来包装一个 `QObject` 对象或者其后裔到这个 `QJSEngine`。
+使用 `newQObject` 来包装一个 `QObject` 对象或者其子类实例到这个 `QJSEngine`。
 
 ```
 QJSValue object = jsEngine.newQObject(new QObject());
@@ -75,7 +79,3 @@ jsEngine.globalObject().setProperty("Q", object);
 ```
 
 注意两个不同的 `QJSEngine` 所产生的 `QJSValue` 是不能互相串用的。
-
----
-
-`QQmlEngine` 通过 `rootContext()->setContextProperty`  来向 qml 文档注册一个全局对象。不过不能在入口 qml 文件中的 `Component.onComponet` 的代码中访问。此时全局对象还没有进行设置。

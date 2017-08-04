@@ -1,4 +1,4 @@
-# QML 开发神秘加成之为网络资源设置本地缓存
+# QML开发神秘加成之为网络资源设置本地缓存
 
 > 作者 [qyvlik](http://blog.qyvlik.space)
 
@@ -37,7 +37,7 @@ QNetworkAccessManager *MyNetworkAccessManagerFactory::create(QObject *parent)
 然后使用如下：
 
 ```
-    engine.setNetworkAccessManagerFactory(new MyNetworkAccessManagerFactory);
+engine.setNetworkAccessManagerFactory(new MyNetworkAccessManagerFactory);
 ```
 
 然后一些网络图片，在加载前就会访问本地是否有缓存，如果有，就直接拉取本地。注意 `XMLHttpRequest` 的内部实现是拥有另一个 `NetworkAccessManager`，所以这个工厂构建的 `NetworkAccessManager` 无法对 `XMLHttpReuqest` 产生作用。

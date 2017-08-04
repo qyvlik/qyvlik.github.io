@@ -1,4 +1,4 @@
-# QML 中的视图
+# QML中的视图
 
 > 作者 [qyvlik](http://blog.qyvlik.space)
 

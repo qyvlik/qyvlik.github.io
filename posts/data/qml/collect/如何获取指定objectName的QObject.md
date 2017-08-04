@@ -2,7 +2,7 @@
 
 > 作者 [qyvlik](http://blog.qyvlik.space)
 
-如下`QML`代码，设置了一个 `objectName` 为 `YOUR_OBJECT_NAME` 的 `QML` 对象，现在需要在 `c++` 代码中获取到他。
+如下`QML`代码，设置了一个 `objectName` 为 `YOUR_OBJECT_NAME` 的 `QML` 对象，现在需要在 `c++` 代码中获取到它。
 
 ```
 //~ main.qml
@@ -38,7 +38,7 @@ QObject* YOUR_OBJECT_NAME = root->findChild<QObject*>("YOUR_OBJECT_NAME", Qt::Fi
 qDebug() << "YOUR_OBJECT_NAME:" << YOUR_OBJECT_NAME;
 ```
 
-在仔细阅读代码，以及测试，发现，上诉代码 `root->findChild` 只能获取到父类为 `Item` 的对象；父类为  `QtObject` 的对象，其父亲为 `Window::contentItem` 或者 `ApplicationWindow::contentItem`。这里给出通过 `objectName` 获取  `QML` 对象的代码：
+在仔细阅读代码，以及测试，发现，上述代码 `root->findChild` 只能获取到父类为 `Item` 的对象；父类为 `QtObject` 的对象，其父亲为 `Window::contentItem` 或者 `ApplicationWindow::contentItem`。这里给出通过 `objectName` 获取  `QML` 对象的代码：
 
 ```
 QObject *findClindByObjectNameFromQmlEngine(QQmlApplicationEngine *qmlEngine, QString objectName)

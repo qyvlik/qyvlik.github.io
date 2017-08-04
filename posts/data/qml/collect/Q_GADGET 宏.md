@@ -8,22 +8,21 @@
 
 > Q_GADGET makes a class member, staticMetaObject, available. staticMetaObject is of type QMetaObject and provides access to the enums declared with Q_ENUMS.
 
-大体就是，某些类，其父类不是 `QObject` 时，可以使用 `Q_GADGET` 代替 `Q_OBJECT` 宏，来实现枚举，属性和方法的脚本化，但是不支持信号与槽。
+大体就是，某些类，其父类不是 `QObject` 时，可以使用 `Q_GADGET` 代替 `Q_OBJECT` 宏，来实现枚举，属性和方法的脚本化，序列化，但是不支持信号与槽。
 
 > Some value types in Qt such as QPoint are represented in JavaScript as objects that have the same properties and functions like in the C++ API. The same representation is possible with custom C++ value types. To enable a custom value type with the QML engine, the class declaration needs to be annotated with Q_GADGET. Properties that are intended to be visible in the JavaScript representation need to be declared with Q_PROPERTY. Similarly functions need to be marked with Q_INVOKABLE. This is the same with QObject based C++ APIs. For example, the Actor class below is annotated as gadget and has properties:
 
 ```
- class Actor
- {
-     Q_GADGET
-     Q_PROPERTY(QString name READ name WRITE setName)
- public:
-     QString name() const { return m_name; }
-     void setName(const QString &name) { m_name = name; }
-
- private:
-     QString m_name;
- }
+class Actor
+{
+    Q_GADGET
+    Q_PROPERTY(QString name READ name WRITE setName)
+public:
+    QString name() const { return m_name; }
+    void setName(const QString &name) { m_name = name; }
+private:
+ QString m_name;
+}
 
  Q_DECLARE_METATYPE(Actor)
 ```

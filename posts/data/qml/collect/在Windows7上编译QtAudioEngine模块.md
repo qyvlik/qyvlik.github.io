@@ -1,4 +1,4 @@
-# 在 Windows 7 上编译 QtAudioEngine 模块
+# 在Windows7上编译QtAudioEngine模块
 
 > 作者 [qyvlik](http://blog.qyvlik.space)
 

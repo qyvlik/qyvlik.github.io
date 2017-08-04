@@ -1,4 +1,4 @@
-# QML 的底层实现之 JavaScript 变量编码
+# QML的底层实现之JavaScript变量编码
 
 > 作者 [qyvlik](http://blog.qyvlik.space)
 
@@ -122,6 +122,8 @@ QML 是基于 *ECMA-262*（JavaScript），通过 Qt 的机制进行拓展的高
 然后使用 15-17 位来编码其他立即数。
 
 总结一下，就是使用 `int64` 作为 JavaScript 运行的 `var`，这个 `var` 可以保存数字或者指针。
+
+---
 
 代码在这里 [qv4value_p.h](https://github.com/qt/qtdeclarative/blob/dev/src/qml/jsruntime/qv4value_p.h)
 
